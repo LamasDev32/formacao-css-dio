@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 header { 
     /* Seletor Elemento */
     background-image: linear-gradient(rgba(0, 0, 0, 0.623), rgb(0, 0, 0));
@@ -50,4 +55,9 @@ h1 {
 #link { 
     /* Seletor ID */
     color: #fff;
+}
+
+.menu a[title="sobre"] {
+    /* Seletor por atributo */
+    color: red;
 }
