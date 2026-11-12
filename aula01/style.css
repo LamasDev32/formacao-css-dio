@@ -57,7 +57,27 @@ h1 {
     color: #fff;
 }
 
-.menu a[title="sobre"] {
-    /* Seletor por atributo */
-    color: red;
+/* 
+
+Seletor por atributo
+.menu a[title] {
+    color: red; 
+}
+
+*/
+
+h2, p, h3 {
+    margin: 1rem;
+    color: rgb(6, 6, 92);
+}
+
+section, .text {
+    background-color: #ccc;
+}
+
+#second .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
 }
