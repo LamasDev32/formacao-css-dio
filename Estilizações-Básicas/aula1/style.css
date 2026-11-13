@@ -9,15 +9,20 @@ html, body {
     height: 100%;
 }
 
-header {
-    background-color: darkblue;
+body {
+    background-image:linear-gradient(rgba(129, 115, 115, 0.705),  rgba(0, 0, 139, 0.486), rgba(0, 0, 0, 0.76)) ; /* RGBA */
+}
+
+.cb-principal {
+    background-image:linear-gradient(rgba(92, 92, 92, 0.637), black); /* Color Name */
     width: 100%;
     height: 5rem;
     color: #fff;
 }
 
-header h1 {
-    padding-left: 1rem;
+.cb-principal h1 {
+    padding-bottom: 1rem;
+    text-align: center;
 }
 
 .menu ul {
@@ -32,8 +37,52 @@ header h1 {
 }
 
 .menu ul li a{
-    color: #fff;
+    color: #fff; /* Hexadecimal */
     text-decoration: none;
     font-size: 1rem;
     font-weight: bold;
+    transition: all .3s ease-in-out;
+}
+
+.menu ul li a:hover {
+    color: rgba(255, 0, 0, 0.521);
+    font-size: 1.1rem;
+}
+
+.header-section {
+    color: #fff;
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #344dbbab;
+    margin-top: 1rem; 
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+#home .text p {
+    margin: 1rem;
+}
+
+.position {
+    display: flex;
+    align-items: center;
+}
+
+.container-image {
+    margin-left: 1rem;
+    width: 400px;
+    height: 350px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
 }
